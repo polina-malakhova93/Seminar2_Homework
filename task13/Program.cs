@@ -1,15 +1,14 @@
 ﻿Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if(number > 99)
+if (number > 99)
 {
-    while(number %   >= 1)
-       {
-           int digit1 = number % 10;
-           int digit2 = number / 10;
-           int digit3 = digit2 /10;
-       }
-       Console.WriteLine(digit3);
+    while (number > 999)
+    {
+        number = number / 10;
+    }
+    int digit3 = number % 10;
+    Console.WriteLine(digit3);
 }
 
 else
